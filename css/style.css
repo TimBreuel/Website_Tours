@@ -6,9 +6,9 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     overflow: hidden;
-}
+} */
 
 /* ===== FONTS ===== */
 
@@ -56,6 +56,21 @@ Green
 
 */
 
+.sub-title {
+    font-size: 33px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right top,
+            rgba(126, 213, 111, 1),
+            rgba(40, 180, 133, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 40px
+}
+
 /* ===== END GENERALS ===== */
 
 /* ===== BACKGROUND BANNER ===== */
@@ -82,22 +97,24 @@ Green
 .banner>h1,
 .banner>h2,
 .banner>a {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #ffff;
+    text-align: center;
 }
 
 
 .banner>h1 {
     font-size: 70px;
-    padding-top: 20vh;
     letter-spacing: 10px;
+    top: 35%;
 }
 
 .banner>h2 {
     font-size: 20px;
     letter-spacing: 10px;
+    top: 45%;
 }
 
 .banner>a {
@@ -107,9 +124,10 @@ Green
     background-color: #ffff;
     color: #777;
     text-decoration: none;
+
     border-radius: 28px;
     padding-top: 14px;
-    margin-top: 40px;
+    top: 60%;
 }
 
 /* ===== END BANNER SCHRIFT ===== */
@@ -219,3 +237,74 @@ input:checked+label>.mobileBackground {
 }
 
 /* ===== END MENU POINTS ===== */
+
+/* ===== Grid PICTURE WHEEL ===== */
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    padding-bottom: 50px;
+}
+
+.grid-box1 {
+
+    grid-column: 1/3;
+}
+
+
+/* ===== PICTURE WHEEL ===== */
+
+
+.grid-box2>h4 {
+    color: #777;
+    margin: 10px;
+    margin-top: 30px;
+
+}
+
+.grid-box2>p {
+    color: #777;
+    margin: 10px;
+    margin-bottom: 20px
+}
+
+.img-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img-box img {
+    position: absolute;
+    transition-duration: 0.7s;
+}
+
+
+
+.img-box img:nth-child(1) {
+    left: 25px;
+    z-index: 1;
+}
+
+.img-box img:nth-child(2) {
+    left: 120px;
+    top: 100px;
+    z-index: 3;
+}
+
+.img-box img:nth-child(3) {
+    right: 25px;
+    top: 50px;
+    z-index: 2;
+}
+
+.img-box img:hover {
+    outline: 10px solid #55c57a;
+    transform: scale(1.1) translateY(-10px);
+    padding: 10px;
+    z-index: 10;
+}
+
+
+/* ===== END PICTURE WHEEL ===== */
