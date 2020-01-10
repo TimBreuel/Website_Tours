@@ -323,14 +323,18 @@ input:checked+label>.mobileBackground {
     background-size: cover;
     padding-top: 150px;
     clip-path: polygon(0 12%, 100% 0%, 100% 88%, 0% 100%);
+    margin: 20px;
+    margin-top: 60px;
 }
 
 .icon-box {
     width: 240px;
     height: 320px;
-    background-color: rgba(255, 255, 255, 0.548);
+    background-color: rgba(255, 255, 255, 0.671);
     border-radius: 10px;
     margin: auto;
+    transition-duration: 0.8s;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 .icon-box h4 {
@@ -362,6 +366,10 @@ input:checked+label>.mobileBackground {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.icon-box:hover {
+    transform: scale(1.04) translateY(-20px)
 }
 
 /* ===== END BOX SECTION ===== */
