@@ -1,0 +1,138 @@
+/* ===== GENERALS ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* ===== END GENERALS ===== */
+
+/* ===== BACKGROUND BANNER ===== */
+
+.banner {
+    background: linear-gradient(to right top, rgba(71, 143, 62, 0.644),
+            rgba(17, 184, 11, 0.479)), url(/imgs/hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: 35% 23%;
+    background-size: cover;
+    background-position: top;
+    height: 90vh;
+    margin: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    position: relative;
+
+}
+
+/* ===== END BACKGROUND BANNER ===== */
+
+/* ===== NAVIGATION BAR ===== */
+
+.mobileNav {
+    position: absolute;
+    right: 40px;
+    top: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+
+}
+
+.mobileNav>span {
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    height: 3px;
+    width: 30px;
+    transition-duration: 1s;
+}
+
+.mobileNav>span:nth-child(1) {
+    left: 20px;
+    top: 23.5px;
+}
+
+.mobileNav>span:nth-child(2) {
+    left: 20px;
+    top: 33.5px;
+}
+
+.mobileNav>span:nth-child(3) {
+    left: 20px;
+    top: 43.5px;
+}
+
+.d-none {
+    display: none;
+}
+
+
+
+/* input:checked+label>.mobileNav {
+    
+} */
+
+input:checked+label>.mobileNav>span:nth-child(1) {
+    background-color: black;
+    transform: rotate(135deg);
+    left: 20px;
+    top: 33.5px;
+}
+
+input:checked+label>.mobileNav>span:nth-child(2) {
+    background-color: black;
+    transform: rotate(45deg);
+    height: 3.4px;
+
+}
+
+input:checked+label>.mobileNav>span:nth-child(3) {
+    background-color: black;
+    transform: rotate(135deg);
+    left: 20px;
+    top: 33.5px;
+}
+
+
+.mobileBackground {
+    position: absolute;
+    right: 40px;
+    top: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(20, 129, 16);
+    transition-duration: 1.5s;
+    z-index: 500;
+}
+
+input:checked+label>.mobileBackground {
+    transform: scale(60);
+
+}
+
+/* ===== MENU POINTS ===== */
+
+.menu {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.445);
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.menu>ul>li {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* ===== END MENU POINTS ===== */
