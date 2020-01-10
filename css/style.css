@@ -10,25 +10,110 @@ body {
     overflow: hidden;
 }
 
+/* ===== FONTS ===== */
+
+@font-face {
+    font-family: "ligth";
+    src: url("/fonts/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "regual";
+    src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "bold";
+    src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+.font-light {
+    font-family: 'ligth';
+}
+
+.font-regual {
+    font-family: 'regual';
+}
+
+.font-bold {
+    font-family: 'bold';
+}
+
+
+/* ===== COLORS ===== */
+
+/*
+ Verlauf
+rgba(126,213,111,0.8)
+
+rgba(40,180,133,0.8)
+
+Grau
+#777
+
+Green
+#55c57a
+
+*/
+
 /* ===== END GENERALS ===== */
 
 /* ===== BACKGROUND BANNER ===== */
 
 .banner {
-    background: linear-gradient(to right top, rgba(71, 143, 62, 0.644),
-            rgba(17, 184, 11, 0.479)), url(/imgs/hero.jpg) no-repeat;
+    background: linear-gradient(to right top,
+            rgba(126, 213, 111, 0.8),
+            rgba(40, 180, 133, 0.8)),
+        url(/imgs/hero.jpg) no-repeat;
     background-size: cover;
     background-position: 35% 23%;
     background-size: cover;
     background-position: top;
-    height: 90vh;
+    height: 70vh;
     margin: 20px;
-    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
     position: relative;
-
 }
 
 /* ===== END BACKGROUND BANNER ===== */
+
+/* ===== BANNER SCHRIFT ===== */
+
+.banner>h1,
+.banner>h2,
+.banner>a {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffff;
+}
+
+
+.banner>h1 {
+    font-size: 70px;
+    padding-top: 20vh;
+    letter-spacing: 10px;
+}
+
+.banner>h2 {
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+.banner>a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #ffff;
+    color: #777;
+    text-decoration: none;
+    border-radius: 28px;
+    padding-top: 14px;
+    margin-top: 40px;
+}
+
+/* ===== END BANNER SCHRIFT ===== */
+
 
 /* ===== NAVIGATION BAR ===== */
 
@@ -40,8 +125,7 @@ body {
     height: 70px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
-    z-index: 1000;
-
+    z-index: 600;
 }
 
 .mobileNav>span {
@@ -72,8 +156,6 @@ body {
     display: none;
 }
 
-
-
 /* input:checked+label>.mobileNav {
     
 } */
@@ -89,8 +171,8 @@ input:checked+label>.mobileNav>span:nth-child(2) {
     background-color: black;
     transform: rotate(45deg);
     height: 3.4px;
-
 }
+
 
 input:checked+label>.mobileNav>span:nth-child(3) {
     background-color: black;
@@ -107,14 +189,15 @@ input:checked+label>.mobileNav>span:nth-child(3) {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: rgb(20, 129, 16);
+    background: linear-gradient(to right top,
+            rgba(126, 213, 111, 1),
+            rgba(40, 180, 133, 1));
     transition-duration: 1.5s;
     z-index: 500;
 }
 
 input:checked+label>.mobileBackground {
     transform: scale(60);
-
 }
 
 /* ===== MENU POINTS ===== */
