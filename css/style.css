@@ -216,7 +216,7 @@ input:checked+label>.mobileNav>span:nth-child(1) {
 input:checked+label>.mobileNav>span:nth-child(2) {
     background-color: black;
     transform: rotate(45deg);
-    height: 3.4px;
+    height: 3.45px;
 }
 
 
@@ -243,7 +243,10 @@ input:checked+label>.mobileNav>span:nth-child(3) {
 }
 
 input:checked+label>.mobileBackground {
-    transform: scale(60);
+    transform: scale(110);
+    /* width: 100vw;
+    height: 100vh;
+    border-radius: 0; */
 }
 
 /* ===== MENU POINTS ===== */
@@ -659,14 +662,23 @@ span {
 
 /* ===== MENU TEST ===== */
 
-.section-menu {
-    width: 100%;
-    height: 500px;
-}
+
 
 .test-menu {
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
     width: 260px;
+    z-index: 500;
+    opacity: 0;
+    transition: all 2s;
+    
+}
+
+input:checked+label .test-menu {
+    
+    opacity: 1;
     
 }
 
