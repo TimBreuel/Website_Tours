@@ -162,7 +162,7 @@ Green
 /* ===== NAVIGATION BAR ===== */
 
 .mobileNav {
-    position: absolute;
+    position: fixed;
     right: 40px;
     top: 50px;
     width: 70px;
@@ -229,7 +229,7 @@ input:checked+label>.mobileNav>span:nth-child(3) {
 
 
 .mobileBackground {
-    position: absolute;
+    position: fixed;
     right: 40px;
     top: 50px;
     width: 70px;
@@ -251,23 +251,80 @@ input:checked+label>.mobileBackground {
 
 /* ===== MENU POINTS ===== */
 
-.menu {
-    position: absolute;
+
+
+.test-menu {
+    position: fixed;
     left: 50%;
-    top: 40%;
+    top: 200px;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.445);
-    width: 250px;
-    height: 350px;
-    border-radius: 10px;
+    width: 260px;
+    z-index: 500;
+    opacity: 0;
+    transition: all 2s;
+    
 }
 
-.menu>ul>li {
-    list-style-type: none;
+input:checked+label .test-menu {
+    
+    opacity: 1;
+    
+}
+
+
+.test-menu>ul>li {
+    width: 260px;
+    height: 50px;
+    margin-bottom: 10px;
     text-align: center;
+    position: relative;
+    list-style-type: none;
+    
 }
 
-/* ===== END MENU POINTS ===== */
+
+.test-menu>ul>li>span {
+    font-size: 28px;
+    padding-top: 3px;
+    transition-duration: .05s;
+    transition: all 0.5s;
+}
+
+.test-menu>ul>li>span:nth-child(1) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 50px;
+    width: 0px;
+    background-color: #FFF;
+    color:black;
+    clip-path: polygon(7% 0, 100% 1%, 100% 100%, 7% 100%, 0% 50%);
+    z-index: 0;
+}
+.test-menu>ul>li>span:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 50px;
+    width: 260px;
+    z-index: 1;
+    color: #ffff;
+    
+}
+
+.test-menu>ul>li:hover span:nth-child(1) {
+    z-index: 4;
+    width: 260px;
+}
+
+.test-menu>ul>li:hover span:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0);
+    color:black;
+    z-index: 5;
+}
+
 
 /* ===== GRID PICTURE WHEEL ===== */
 
@@ -660,84 +717,6 @@ span {
 /* ===== END HEADLINES ===== */
 
 
-/* ===== MENU TEST ===== */
-
-
-
-.test-menu {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    width: 260px;
-    z-index: 500;
-    opacity: 0;
-    transition: all 2s;
-    
-}
-
-input:checked+label .test-menu {
-    
-    opacity: 1;
-    
-}
-
-.test-menu>ul {
-    background-color: green;
-}
-
-.test-menu>ul>li {
-    width: 260px;
-    height: 50px;
-    margin-bottom: 10px;
-    text-align: center;
-    position: relative;
-    list-style-type: none;
-    
-}
-
-
-.test-menu>ul>li>span {
-    font-size: 28px;
-    padding-top: 3px;
-    transition-duration: .05s;
-    transition: all 0.5s;
-}
-
-.test-menu>ul>li>span:nth-child(1) {
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    height: 50px;
-    width: 0px;
-    background-color: #FFF;
-    color:black;
-    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
-    z-index: 0;
-}
-.test-menu>ul>li>span:nth-child(2) {
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    height: 50px;
-    width: 260px;
-    z-index: 1;
-    color: lime;
-    background-color: black;
-}
-
-.test-menu>ul>li:hover span:nth-child(1) {
-    z-index: 4;
-    width: 290px;
-}
-
-.test-menu>ul>li:hover span:nth-child(2) {
-    background-color: rgba(255, 255, 255, 0);
-    color:black;
-    z-index: 5;
-}
 
 
 /* ===== MEDIAQUERYS ===== */
