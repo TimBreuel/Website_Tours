@@ -14,17 +14,17 @@
 
 @font-face {
     font-family: "ligth";
-    src: url("/fonts/OpenSans-Light.ttf") format("truetype");
+    src: url("../fonts/OpenSans-Light.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "regual";
-    src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "bold";
-    src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype");
+    src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
 }
 
 .font-light {
@@ -266,7 +266,7 @@ input:checked+label>.mobileBackground {
 
 /* ===== END MENU POINTS ===== */
 
-/* ===== Grid PICTURE WHEEL ===== */
+/* ===== GRID PICTURE WHEEL ===== */
 
 .grid-wrapper {
     display: grid;
@@ -366,12 +366,14 @@ input:checked+label>.mobileBackground {
     text-align: center;
     display: block;
     width: 100%;
+    color: #777;
 }
 
 .icon-box p {
     text-align: center;
     display: block;
     width: 100%;
+    color: #777;
 }
 
 .icon {
