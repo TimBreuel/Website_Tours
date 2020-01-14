@@ -585,7 +585,7 @@ input:checked+label .test-menu>ul>li>span {
     transition: all 1s;
 }
 
-.box-card:hover {
+.box-container:hover .box-card {
     transform: rotateY(180deg);
 }
 
