@@ -575,12 +575,12 @@ input:checked+label .test-menu>ul>li>span {
 
 .box-back1 {
     background: linear-gradient(rgb(251, 153, 26),
-            rgb(255, 190, 50))
+            rgb(255, 190, 50));
 }
 
 .box-back2 {
     background: linear-gradient(rgb(126, 213, 111),
-            rgb(40, 180, 133))
+            rgb(40, 180, 133));
 }
 
 .box-back3 {
@@ -604,6 +604,89 @@ input:checked+label .test-menu>ul>li>span {
 
 /* ===== END BOXEN ===== */
 
+/* ===== BOXEN MOBILE ===== */
+
+.card-mobile1 {
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    background: linear-gradient(rgb(251, 153, 26),
+            rgb(255, 190, 50));
+    height: 200px;
+    display: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.card-mobile1>h5 {
+    text-align: center;
+    color:#fff;
+    padding-top: 60px;
+    font-size: 16px; 
+}
+
+.card-mobile1>p {
+    text-align: center;
+    color:#fff;
+    font-size: 30px; 
+}
+
+.card-mobile1>.btn {
+    margin-top: 10px;
+}
+
+
+.card-mobile2 {
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    background: linear-gradient(rgb(126, 213, 111),
+            rgb(40, 180, 133));
+    height: 200px;
+    display: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.card-mobile2>h5 {
+    text-align: center;
+    color:#fff;
+    padding-top: 60px;
+    font-size: 16px; 
+}
+
+.card-mobile2>p {
+    text-align: center;
+    color:#fff;
+    font-size: 30px; 
+}
+
+.card-mobile2>.btn {
+    margin-top: 10px;
+}
+
+
+.card-mobile3 {
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    background: linear-gradient(rgb(16, 0, 160), rgb(73, 85, 255));
+    height: 200px;
+    display: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.card-mobile3>h5 {
+    text-align: center;
+    color:#fff;
+    padding-top: 60px;
+    font-size: 16px; 
+}
+
+.card-mobile3>p {
+    text-align: center;
+    color:#fff;
+    font-size: 30px; 
+}
+
+.card-mobile3>.btn {
+    margin-top: 10px;
+}
+
+/* ===== END BOXEN MOBILE ===== */
+
 /* ===== BACKGROUND ===== */
 
 .background {
@@ -615,7 +698,6 @@ input:checked+label .test-menu>ul>li>span {
 }
 
 .background1 {
-
     background: linear-gradient(to right top, rgba(251, 154, 26, 0.534),
             rgba(209, 149, 18, 0.479)), url(../imgs/nat-5.jpg) no-repeat;
     background-size: cover;
@@ -828,6 +910,27 @@ span {
     /* ===== FLIP-BOXEN ===== */
     .media50 {
         width: 100%;
+    }
+
+    /* ===== FLIP-BOXEN-MOBILE ===== */
+
+    .card-mobile1 {
+        display: block;
+    }
+
+    .card-mobile2 {
+        display: block;
+    }
+
+    .card-mobile3 {
+        display: block;
+    }
+
+    .box-container {
+        height: 720px;
+    }
+    .box {
+        height: 720px; 
     }
 
     /* ===== PICTURE WHEEL ===== */
