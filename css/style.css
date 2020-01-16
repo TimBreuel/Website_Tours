@@ -181,8 +181,8 @@ Green
   background-size: cover;
   background-position: top;
   height: 80vh;
-  margin: 20px;
-  clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
   position: relative;
 }
 
@@ -449,7 +449,6 @@ input:checked + label .test-menu > ul > li > span {
   padding-top: 150px;
   padding-bottom: 150px;
   clip-path: polygon(0 12%, 100% 0%, 100% 88%, 0% 100%);
-  margin: 20px;
 }
 
 .icon-box {
