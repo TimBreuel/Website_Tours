@@ -191,7 +191,7 @@ Green
   text-align: center;
   font-size: 70px;
   letter-spacing: 10px;
-  padding-top: 100px;
+  padding-top: 180px;
 }
 
 .banner>h2 {
@@ -1028,6 +1028,46 @@ input[type="radio"]:checked+label>span {
 }
 
 /* ===== END FORM ===== */
+
+/* ===== FOOTER ===== */
+
+footer {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+
+footer>div>i {
+  font-size: 140px;
+  margin: 30px;
+  background: linear-gradient(to right top,
+      rgba(126, 213, 111, 1),
+      rgba(40, 180, 133, 1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-text {
+  font-size: 20px;
+  margin: 30px;
+  background: linear-gradient(to right top,
+      rgba(126, 213, 111, 1),
+      rgba(40, 180, 133, 1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+/* ===== END FOOTER ===== */
 
 /* ===== MEDIAQUERYS ===== */
 
